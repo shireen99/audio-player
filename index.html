@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Audio Player">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/audio-player.css">
+</head>
+
+<body onload='init();'>
+    <div class="container">
+        <div>
+            <div class="progress-bar" id="progressContainer"></div>
+            <canvas id="audioVisualiser" height="250" width="2000"></canvas>
+        </div>
+        <div>
+            <audio id="audioFile" ontimeupdate="updateCanvas()">
+                <source src="assets/audio/swinging.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="text-center padding-top-20">
+            <button class="control-btn" onclick="toggleAudioPlay()" type="button">
+                <img class="controls-img" src="assets/img/play.png" alt="" id="btnImg">
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/audio-player.js"></script>
+</body>
+
+</html>

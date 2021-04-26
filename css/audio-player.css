@@ -1,0 +1,33 @@
+.container {
+    padding: 30px;
+}
+
+.control-btn {
+    background-color: var(--whiteColor);
+    border: 1px solid var(--blueColor);
+    width: 140px;
+    border-radius: 30px;
+    padding: 12px;
+    outline: none;
+}
+
+.controls-img {
+    width: 42px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#audioVisualiser, #progressVisualiser {
+    max-width: 100%;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.progress-bar {
+    position: absolute;
+    width: 0;
+}
